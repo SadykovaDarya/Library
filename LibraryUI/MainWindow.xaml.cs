@@ -27,7 +27,8 @@ namespace LibraryUI
 
             using (var context = new Context())
             {
-                context.Readers.ToArray();                
+                context.Books.ToList();
+                context.Readers.ToArray();
             }
         }
     }
