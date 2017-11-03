@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace LibraryUI
         public MainWindow()
         {
             InitializeComponent();
+
+            using (var context = new Context())
+            {
+                context.Books.ToList();
+            }
         }
     }
 }
