@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryData
 {
-    class Context : DbContext
+    public class Context : DbContext
     {
         public DbSet<Book> Books { get; set; }
         public DbSet<Reader> Readers { get; set; }
